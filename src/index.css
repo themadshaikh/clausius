@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+@theme {
+  --color-bg-primary: #0f1117;
+  --color-bg-surface: #1a1d27;
+  --color-bg-elevated: #22263a;
+  --color-border: #2e3348;
+  --color-border-active: #4a5280;
+  --color-text-primary: #e8eaf0;
+  --color-text-secondary: #8b90a8;
+  --color-text-muted: #555c78;
+  --color-accent-blue: #4d9de0;
+  --color-accent-green: #3dd68c;
+  --color-accent-amber: #f5a623;
+  --color-accent-red: #e05252;
+  --color-accent-purple: #9b6dff;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-ui: 'IBM Plex Sans', 'Inter', sans-serif;
+}
+
+:root {
+  --bg-primary:     #0f1117;
+  --bg-surface:     #1a1d27;
+  --bg-elevated:    #22263a;
+  --border:         #2e3348;
+  --border-active:  #4a5280;
+  --text-primary:   #e8eaf0;
+  --text-secondary: #8b90a8;
+  --text-muted:     #555c78;
+  --accent-blue:    #4d9de0;
+  --accent-green:   #3dd68c;
+  --accent-amber:   #f5a623;
+  --accent-red:     #e05252;
+  --accent-purple:  #9b6dff;
+  --mono-font:      'JetBrains Mono', 'Fira Code', monospace;
+  --ui-font:        'IBM Plex Sans', 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--ui-font);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-active);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Sticky table headers */
+.sticky-header th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg-surface);
+}
