@@ -1,8 +1,8 @@
-# Supercritical — Steam Table Interpolation Portal
+# Clausius — Steam Table Interpolation Portal
 
 A web-based steam table lookup and interpolation tool for engineering thermodynamics. Enter a temperature or pressure and instantly retrieve all saturated and superheated water/steam properties, with linear interpolation between tabulated values.
 
-Live: **https://steam-table-app.vercel.app**
+Live: **https://clausius.vercel.app**
 
 ---
 
@@ -23,8 +23,8 @@ Live: **https://steam-table-app.vercel.app**
 **Requirements:** Node.js 18+
 
 ```bash
-git clone https://github.com/themadshaikh/supercritical.git
-cd supercritical
+git clone https://github.com/themadshaikh/clausius.git
+cd clausius
 npm install
 npm run dev
 ```
@@ -73,6 +73,20 @@ Tabulated values are drawn from the following primary references. Each standard 
 > ASME International Steam Tables for Industrial Use (ASME PTC 19.1). Based on IAPWS-IF97.
 >
 > ASME Steam Tables are based on the IAPWS-IF97 formulation. Values shown are IAPWS-IF97 compliant. For ASME code compliance work, always consult the licensed ASME publication directly. This portal is not affiliated with ASME.
+
+---
+
+## About the Name
+
+**Why Clausius?**
+Rudolf Clausius (1822–1888) spent his career telling the world
+that entropy always increases. It seemed fitting to name a tool
+that tracks entropy to 6 significant figures after the man who
+made us care about it in the first place.
+
+The real irony: Clausius's second law says the universe tends
+toward disorder. This tool exists to bring order to thermodynamic
+data. He'd probably consider that a violation of his own law.
 
 ---
 

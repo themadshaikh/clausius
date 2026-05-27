@@ -33,7 +33,7 @@ export function Header() {
         background: 'var(--bg-surface)',
         borderBottom: '1px solid var(--border)',
         padding: '0 24px',
-        height: '56px',
+        height: '64px',
         display: 'flex',
         alignItems: 'center',
         gap: '24px',
@@ -47,9 +47,14 @@ export function Header() {
           <circle cx="12" cy="10" r="3" fill="var(--accent-blue)" opacity="0.6"/>
           <path d="M7 16l5 5 5-5" stroke="var(--accent-blue)" strokeWidth="1.5" fill="none" opacity="0.4"/>
         </svg>
-        <span style={{ fontFamily: 'var(--ui-font)', fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem', letterSpacing: '0.02em' }}>
-          Steam Table Portal
-        </span>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+          <span style={{ fontFamily: 'var(--ui-font)', fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem', letterSpacing: '0.02em' }}>
+            Steam Table Portal
+          </span>
+          <span style={{ fontFamily: 'var(--ui-font)', fontSize: '0.68rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>
+            Entropy always increases — except in well-organized steam tables.
+          </span>
+        </div>
       </div>
 
       {/* Standard selector */}
