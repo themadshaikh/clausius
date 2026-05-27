@@ -2,7 +2,7 @@
 
 A web-based steam table lookup and interpolation tool for engineering thermodynamics. Enter a temperature or pressure and instantly retrieve all saturated and superheated water/steam properties, with linear interpolation between tabulated values.
 
-Live: **https://supercritical.vercel.app**
+Live: **https://steam-table-app.vercel.app**
 
 ---
 
